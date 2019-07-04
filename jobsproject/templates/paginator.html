@@ -1,0 +1,10 @@
+<div style="margin: 30px;text-align: center">
+{% if page.has_previous %}
+   <button><a href="?page={{ page.prvious_page_number }}">previous</a></button>
+{% endif %}
+
+page {{ page.number }} of {{ page.paginator.num_pages }}
+{% if page.has_next %}
+    <button><a href="?page={{ page.next_page_number }}">next</a></button>
+{% endif %}
+</div>

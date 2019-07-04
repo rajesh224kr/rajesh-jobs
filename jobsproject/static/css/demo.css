@@ -1,0 +1,42 @@
+body{
+    background-image: url("http://getwallpapers.com/wallpaper/full/e/b/e/574109.jpg");
+
+
+}
+image{
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    margin: 15px;
+    border: 2px solid darkred;
+}
+h1{
+    background-color: crimson;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+    font-style: oblique;
+    color: white;
+}
+td{
+    background: crimson;
+    color: white;
+    text-align: center;
+}
+thead{
+    background: darkgreen;
+    color: darkgoldenrod;
+    font-size: 25px;
+}
+table{
+    border: 5px solid darkred;
+}
+.container .jumbotron{
+    background: darkred;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    font-style: oblique;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+    font-size: 35px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load staticfiles%}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+</head>
+<body>
+     <h1>HYD JOBS INFO</h1>
+     <img src="{% static 'image/hyd1.jpg' %}">
+     <img src="{% static 'image/hyd2.jpg' %}">
+     <img src="{% static 'image/hyd3.jpg' %}">
+<table border="2">
+    {% if data1 %}
+
+        <thead>
+
+            <th>Date</th>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Eligibility</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+        </thead>
+        {% for x in data1 %}
+            <tr>
+
+            <td>{{ x.Date }}</td>
+            <td>{{ x.Company }}</td>
+            <td>{{ x.Title }}</td>
+            <td>{{ x.Eligibility }}</td>
+            <td>{{ x.Address }}</td>
+            <td>{{ x.Email }}</td>
+            <td>{{ x.PhoneNumber }}</td>
+            </tr>
+        {% endfor %}
+    {% endif %}
+</table>
+{% include 'paginator.html' with page=data1 %}
+</body>
+</html>

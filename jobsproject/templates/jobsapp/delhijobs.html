@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+{% load staticfiles%}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+</head>
+<body>
+     <h1>DELHI JOBS INFO</h1>
+     <img src="{% static 'image/delhi1.jpg' %}">
+     <img src="{% static 'image/delhi2.jpg' %}">
+     <img src="{% static 'image/delhi3.png' %}">
+<table border="2">
+    {% if data2 %}
+
+        <thead>
+            <th>Date</th>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Eligibility</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+        </thead>
+        {% for x in data2 %}
+            <tr>
+            <td>{{ x.Date }}</td>
+            <td>{{ x.Company }}</td>
+            <td>{{ x.Title }}</td>
+            <td>{{ x.Eligibility }}</td>
+            <td>{{ x.Address }}</td>
+            <td>{{ x.Email }}</td>
+            <td>{{ x.PhoneNumber }}</td>
+            </tr>
+        {% endfor %}
+    {% endif %}
+</table>
+
+</body>
+</html>
